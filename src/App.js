@@ -1,23 +1,18 @@
-import logo from './logo.svg';
+
 import './App.css';
+import KitchenSinkExample from './Product';
 
 function App() {
+
+ 
+  const firstName = prompt("type your first name");
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+       <p className='hello'> Hello {firstName ||'there' } </p>
+       <br></br>
+       {/* <p>  {firstName ? "" : "  there"} </p> */}
+       <div className='card'><KitchenSinkExample /></div> 
+      
     </div>
   );
 }
